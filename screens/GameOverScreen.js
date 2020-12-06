@@ -61,10 +61,10 @@ const GameOverScreen = props => {
           ]}
         >
           <StyledText
-            style={[
-              styles.resultText,
-              { fontSize: availableDeviceHeight < 400 ? 14 : 18 },
-            ]}
+            style={{
+              ...styles.resultText,
+              ...{ fontSize: availableDeviceHeight < 400 ? 14 : 18 },
+            }}
           >
             Seu celular precisou de{' '}
             <Text style={styles.highlight}>{props.roundsNumber}</Text>{' '}
